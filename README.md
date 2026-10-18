@@ -32,10 +32,7 @@ Portfolio/
 3. Visit **https://ashish-jha-73.github.io** — done. No settings needed.
 
 ### Netlify
-Drag & drop this folder onto https://app.netlify.com/drop
-
-### Vercel
-`vercel deploy` from this folder, or import the repo at vercel.com.
+https://ashish-jha-73.netlify.app/
 
 ## Customizing
 
