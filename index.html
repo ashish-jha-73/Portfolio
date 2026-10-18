@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ashish Kumar — Software Engineer · CSE @ IIT Bombay</title>
+  <meta name="description" content="Portfolio of Ashish Kumar — Computer Science & Engineering undergrad at IIT Bombay and Software Engineering Intern at Adobe. Building fast software: GPU shaders, machine learning, and developer tools." />
+  <meta name="author" content="Ashish Kumar" />
+  <meta name="theme-color" content="#0a0d14" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ashish Kumar — Software Engineer · CSE @ IIT Bombay" />
+  <meta property="og:description" content="CSE undergrad @ IIT Bombay · SWE Intern @ Adobe. GPU shaders, machine learning, and developer tools." />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/152195795?v=4" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Ashish Kumar — Software Engineer · CSE @ IIT Bombay" />
+  <meta name="twitter:description" content="CSE undergrad @ IIT Bombay · SWE Intern @ Adobe. GPU shaders, machine learning, and developer tools." />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Fonts: preconnect + display=swap for fast first paint -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add("js");</script>
+  <script src="script.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ashish Kumar",
+    "jobTitle": "Software Engineering Intern",
+    "worksFor": { "@type": "Organization", "name": "Adobe" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "IIT Bombay" },
+    "email": "mailto:ashishjha970925@gmail.com",
+    "sameAs": ["https://github.com/ashish-jha-73"]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- scroll progress -->
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="logo" href="#top" aria-label="Back to top">AK<span class="logo-dot">.</span></a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle color theme">
+          <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <a class="btn btn-ghost btn-sm nav-resume" href="resume.pdf" target="_blank" rel="noopener">
+          Résumé
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+        </a>
+        <button class="icon-btn nav-burger" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+          <svg class="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-outline" href="resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-hi reveal"><span class="kicker-line"></span>Hi there, I'm</p>
+          <h1 class="hero-name reveal" style="--d:.05s">Ashish Kumar<span class="accent">.</span></h1>
+          <p class="hero-role reveal" style="--d:.1s">I build <span class="grad">fast software</span> — from GPU shaders to neural networks.</p>
+          <p class="hero-blurb reveal" style="--d:.15s">
+            Computer Science & Engineering undergrad at <strong>IIT Bombay</strong> and Software
+            Engineering Intern at <strong>Adobe</strong>, where I work on WebGPU compute shaders.
+            I love taking hard problems — graphics, machine learning, systems — and shipping them
+            as tools people actually use.
+          </p>
+          <div class="hero-cta reveal" style="--d:.2s">
+            <a class="btn btn-primary" href="#projects">
+              View my work
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+            </a>
+            <a class="btn btn-outline" href="#contact">Get in touch</a>
+          </div>
+          <div class="hero-socials reveal" style="--d:.25s">
+            <a href="https://github.com/ashish-jha-73" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+            <a href="mailto:ashishjha970925@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" style="--d:.2s">
+          <div class="avatar-frame">
+            <img src="assets/avatar.jpg" alt="Portrait of Ashish Kumar" width="460" height="460" fetchpriority="high" />
+            <span class="chip chip-1">⚡ Codeforces Specialist</span>
+            <span class="chip chip-2">🌍 15K+ visits on Mithila-Lipi</span>
+            <span class="chip chip-3">♟️ 2088 Lichess Bullet</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">01 · About</span>
+          <h2>A bit about me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm Ashish — a B.Tech Computer Science & Engineering student at
+              <strong>IIT Bombay</strong> (Class of 2027). My journey ran through Navodaya
+              Vidyalayas in Bihar and Kerala before landing in Mumbai, and it taught me early
+              that curiosity plus consistency beats raw talent every time.
+            </p>
+            <p>
+              These days I'm happiest where <strong>systems meet intelligence</strong>: writing
+              WGSL compute shaders at Adobe, training CNNs from scratch, squeezing evaluation
+              heuristics into a chess engine, or building tools — a virtualenv manager, a script
+              transliterator — that people genuinely use. I care about the last 10%:
+              performance, polish, and the little details.
+            </p>
+            <blockquote class="motto">
+              <p lang="sa">उद्योगानां नास्ति दरिद्रता</p>
+              <cite>“There is no poverty for the industrious.” — my favourite line, and my GitHub bio.</cite>
+            </blockquote>
+          </div>
+
+          <aside class="about-facts reveal" style="--d:.1s">
+            <div class="fact"><span class="fact-label">Degree</span><span class="fact-value">B.Tech, CSE · IIT Bombay · 2023–27</span></div>
+            <div class="fact"><span class="fact-label">Based in</span><span class="fact-value">Mumbai, India</span></div>
+            <div class="fact"><span class="fact-label">Focus</span><span class="fact-value">Systems · GPU · Machine Learning</span></div>
+            <div class="fact"><span class="fact-label">Off-screen</span><span class="fact-value">Chess · Competitive programming</span></div>
+          </aside>
+        </div>
+
+        <div class="stats reveal" style="--d:.15s">
+          <div class="stat"><span class="stat-num" data-count="31" data-suffix="+">0</span><span class="stat-label">GitHub repositories</span></div>
+          <div class="stat"><span class="stat-num" data-count="15" data-suffix="K+">0</span><span class="stat-label">visits to Mithila-Lipi</span></div>
+          <div class="stat"><span class="stat-num" data-count="40" data-suffix="+">0</span><span class="stat-label">Kaggle model downloads</span></div>
+          <div class="stat"><span class="stat-num" data-count="2088" data-suffix="">0</span><span class="stat-label">peak Lichess Bullet rating</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">02 · Experience</span>
+          <h2>Where I've worked</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="tl-item reveal">
+            <div class="tl-card">
+              <div class="tl-head">
+                <h3><a href="https://www.adobe.com" target="_blank" rel="noopener">Adobe</a> <span class="tl-role">— Software Engineering Intern</span></h3>
+                <span class="tl-when">May 2026 – Jul 2026 · Noida, India</span>
+              </div>
+              <ul class="tl-points">
+                <li>Built <strong>color-profile conversion</strong> with <strong>WGSL compute shaders</strong>, enabling efficient GPU-based processing of image pipelines.</li>
+                <li>Developed a <strong>WebGPU-based graphics implementation</strong>, improving performance and cross-browser compatibility for modern web rendering.</li>
+                <li>Optimized GPU processing through parallel execution and targeted performance work on <strong>production-level, performance-focused apps</strong>.</li>
+                <li>Worked hands-on with GPU programming, color management, graphics debugging, and optimization.</li>
+              </ul>
+              <div class="tag-row">
+                <span>WebGPU</span><span>WGSL</span><span>Compute Shaders</span><span>GPU Optimization</span><span>Color Management</span>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">03 · Projects</span>
+          <h2>Things I've built</h2>
+          <p class="section-sub">A few favourites — from engines and networks to tools with real users. More on <a href="https://github.com/ashish-jha-73" target="_blank" rel="noopener">GitHub →</a></p>
+        </div>
+
+        <div class="cards" id="project-cards">
+          <article class="card reveal">
+            <div class="card-top">
+              <svg class="folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>
+              <div class="card-links">
+                <a href="https://github.com/ashish-jha-73/Chess-Engine" target="_blank" rel="noopener" aria-label="Chess Engine on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>Chess Engine</h3>
+            <p>A from-scratch C++ engine with full rule support — castling, en passant, promotion — minimax search, and a heuristic evaluator using piece-square tables & mobility. Peaked at <strong>2088 Bullet / 2040 Blitz</strong> on Lichess.</p>
+            <p class="card-meta">C++ · SFML · Minimax · Heuristics</p>
+          </article>
+
+          <article class="card reveal" style="--d:.05s">
+            <div class="card-top">
+              <svg class="folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>
+              <div class="card-links">
+                <a href="https://github.com/ashish-jha-73/Drishtara" target="_blank" rel="noopener" aria-label="Drishtara on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>Facial Expression Analysis</h3>
+            <p>A VGG-style CNN built entirely from scratch — no transfer learning — for 7-class expression recognition on 35,887 FER-2013 images. <strong>67.97% test accuracy</strong>, published as a public Kaggle Model Card.</p>
+            <p class="card-meta">Python · TensorFlow · CNN · OpenCV</p>
+          </article>
+
+          <article class="card reveal" style="--d:.1s">
+            <div class="card-top">
+              <svg class="folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>
+              <div class="card-links">
+                <a href="https://github.com/ashish-jha-73/Mithila-Lipi" target="_blank" rel="noopener" aria-label="Mithila-Lipi on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+                <a href="https://ashish-jha-73.github.io/Mithila-Lipi/" target="_blank" rel="noopener" aria-label="Mithila-Lipi live demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>Mithila-Lipi</h3>
+            <p>A free browser tool converting Devanagari to <strong>Tirhuta (Mithilakshar)</strong>, built to help preserve the Maithili language and its original script — real-time, fully client-side transliteration with <strong>15K+ impressions</strong>.</p>
+            <p class="card-meta">JavaScript · Unicode · Client-side</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="card-top">
+              <svg class="folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>
+              <div class="card-links">
+                <a href="https://github.com/ashish-jha-73/ALT" target="_blank" rel="noopener" aria-label="ALT on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+                <a href="https://al-tfrontend.vercel.app" target="_blank" rel="noopener" aria-label="ALT live demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>Adaptive Learning Tutor</h3>
+            <p>A deployed tutoring platform that models concept mastery with <strong>Bayesian Knowledge Tracing</strong>, then uses a policy engine to adapt question difficulty, type, hints, and explanation depth to each learner's evolving state.</p>
+            <p class="card-meta">JavaScript · BKT · Personalization</p>
+          </article>
+
+          <article class="card reveal" style="--d:.05s">
+            <div class="card-top">
+              <svg class="folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>
+              <div class="card-links">
+                <a href="https://github.com/ashish-jha-73/3D-Object-Reconstruction" target="_blank" rel="noopener" aria-label="3D Object Reconstruction on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>Multi-View 3D Reconstruction</h3>
+            <p>A deep-learning pipeline reconstructing coarse <strong>3D voxel geometry from multiple 2D views</strong> — multi-view feature aggregation into a volumetric decoder, with experiments on how view count affects reconstruction quality.</p>
+            <p class="card-meta">Python · PyTorch · Computer Vision</p>
+          </article>
+
+          <article class="card reveal" style="--d:.1s">
+            <div class="card-top">
+              <svg class="folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>
+              <div class="card-links">
+                <a href="https://github.com/ashish-jha-73/IkshvakuPEM" target="_blank" rel="noopener" aria-label="EnvVault on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3>EnvVault</h3>
+            <p>A lightweight Linux manager for Python virtual environments — space-efficient <strong>auto-archival & on-demand restore</strong>, env-aware prompts, and tab completion for streamlined developer workflows.</p>
+            <p class="card-meta">Python · Bash · Linux · CLI</p>
+          </article>
+        </div>
+
+        <div class="more-projects reveal">
+          <h3 class="more-title">Other noteworthy projects</h3>
+          <ul class="more-list">
+            <li>
+              <a href="https://github.com/ashish-jha-73/XV6-Enhanced" target="_blank" rel="noopener"><strong>xv6 Kernel Enhancements</strong> <span class="arrow">↗</span></a>
+              <p>Demand paging, copy-on-write fork, and weighted round-robin scheduling added to the xv6 OS.</p>
+              <span class="card-meta">C · Operating Systems</span>
+            </li>
+            <li>
+              <a href="https://github.com/ashish-jha-73/Plagiarism-Checker" target="_blank" rel="noopener"><strong>Plagiarism Checker</strong> <span class="arrow">↗</span></a>
+              <p>Source-code similarity detection via Levenshtein distance & LCS, reproducibly shipped with Docker.</p>
+              <span class="card-meta">C++ · Algorithms · Docker</span>
+            </li>
+            <li>
+              <a href="https://github.com/ashish-jha-73/Bash-Autograder-VCS" target="_blank" rel="noopener"><strong>Bash Autograder & VCS</strong> <span class="arrow">↗</span></a>
+              <p>CLI autograding with CSV score aggregation, plus a git-inspired version-control workflow.</p>
+              <span class="card-meta">Bash · Python · Git</span>
+            </li>
+            <li>
+              <a href="https://github.com/ashish-jha-73/Link-State-Emulator" target="_blank" rel="noopener"><strong>Link-State Emulator</strong> <span class="arrow">↗</span></a>
+              <p>A simulator for link-state routing dynamics across network topologies.</p>
+              <span class="card-meta">C++ · Computer Networks</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">04 · Skills</span>
+          <h2>Tools I work with</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3>Languages</h3>
+            <div class="tag-cloud">
+              <span>C++</span><span>C</span><span>Python</span><span>JavaScript</span><span>Bash</span><span>SQL</span><span>Rust</span><span>MIPS Assembly</span>
+            </div>
+          </div>
+          <div class="skill-card reveal" style="--d:.05s">
+            <h3>ML & Data</h3>
+            <div class="tag-cloud">
+              <span>PyTorch</span><span>TensorFlow</span><span>Keras</span><span>Scikit-learn</span><span>NumPy</span><span>Pandas</span><span>OpenCV</span>
+            </div>
+          </div>
+          <div class="skill-card reveal" style="--d:.1s">
+            <h3>Systems & Web</h3>
+            <div class="tag-cloud">
+              <span>Linux</span><span>Git</span><span>Docker</span><span>WebGPU</span><span>WGSL</span><span>SFML</span><span>React</span><span>Node.js</span><span>Django</span><span>HTML/CSS</span><span>sed · awk</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker">05 · Achievements</span>
+          <h2>Beyond the classroom</h2>
+        </div>
+
+        <div class="awards-grid">
+          <div class="award reveal"><span class="award-year">2020</span><h3>NTSE — Stage-I Qualified</h3><p>National Talent Search Examination, Government of India.</p></div>
+          <div class="award reveal" style="--d:.05s"><span class="award-year">2023</span><h3>Dakshana Foundation</h3><p>Recognized for academic performance and competitive-exam achievement.</p></div>
+          <div class="award reveal" style="--d:.1s"><span class="award-year">2023</span><h3>FFE Scholarship</h3><p>Awarded for academic merit and continued excellence in studies.</p></div>
+          <div class="award reveal" style="--d:.15s"><span class="award-year">2024</span><h3>Codeforces Specialist</h3><p>Reached Specialist rank through regular competitive-programming contests.</p></div>
+        </div>
+
+        <div class="lead-block reveal">
+          <h3 class="more-title">Mentorship & leadership</h3>
+          <div class="lead-grid">
+            <div class="lead-card">
+              <span class="tl-when">Dec 2025</span>
+              <h4>Examination Coordinator · Dakshana</h4>
+              <p>Invigilated the Dakshana examination at JNV Deoghar for <strong>120+ students</strong> across two days — part of a nationwide assessment with 50,000+ participants.</p>
+            </div>
+            <div class="lead-card">
+              <span class="tl-when">Jun – Jul 2024</span>
+              <h4>Student Mentor · JoSAA Counselling</h4>
+              <p>Guided students through institute & branch selection, helping them build informed JoSAA preference orders.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container contact-inner">
+        <span class="section-kicker reveal">06 · Contact</span>
+        <h2 class="reveal" style="--d:.05s">Let's build something great<span class="accent">.</span></h2>
+        <p class="reveal" style="--d:.1s">
+          Whether it's an opportunity, a project idea, or a quick game of chess —
+          my inbox is always open. I'll reply as soon as I can.
+        </p>
+        <div class="contact-actions reveal" style="--d:.15s">
+          <a class="btn btn-primary btn-lg" href="mailto:ashishjha970925@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Say hello
+          </a>
+          <a class="btn btn-outline btn-lg" href="https://github.com/ashish-jha-73" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Designed & built by <strong>Ashish Kumar</strong></p>
+      <p class="footer-meta">© <span id="year">2026</span> · Mumbai, India · <a href="https://github.com/ashish-jha-73" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+  </footer>
+</body>
+</html>
